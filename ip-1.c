@@ -6,10 +6,10 @@ void getdata(char** ip)
 		printf("Content-type:Text\html\n\n");
 		printf("Erreur!");
 	}
-}
+} 
 void affichage(char* ip,int x,int y,int z,int w)
 {
-	printf("Content-type:Text/html \n\n");
+    printf("Content-type:Text/html \n\n");
     printf("<HTML>");
     printf("<HEAD><TITLE>ip</TITLE></HEAD>");
     printf("<BODY>");
@@ -24,18 +24,18 @@ void affichage(char* ip,int x,int y,int z,int w)
     else
     {
       if(x >= 0 && x <= 126)
-    	{
-        	printf("<p>Adresse est de classe A</p>");
-   	  }
-  	  if(x >= 128 && x <= 191)
- 	    {
-       	 printf("<p>Adresse est de classe B</p>");
-  	  }
- 	   if(x >= 192 && x <= 223)
-    	{
-      	  printf("<p>Adresse est de classe C</p>");
-  	  }
-	 }
+      {
+          printf("<p>Adresse est de classe A</p>");
+      }
+      if(x >= 128 && x <= 191)
+      {
+         printf("<p>Adresse est de classe B</p>");
+      }
+      if(x >= 192 && x <= 223)
+      {
+      	 printf("<p>Adresse est de classe C</p>");
+      }
+    }
     printf("</BODY>");
     printf("</HTML>");
     return 0;
