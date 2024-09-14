@@ -1,11 +1,11 @@
 void getdata(char** ip)
 {
-	*ip = getenv("QUERY_STRING");
-	if(*ip == NULL)
-	{
-		printf("Content-type:Text\html\n\n");
-		printf("Erreur!");
-	}
+  *ip = getenv("QUERY_STRING");
+   if(*ip == NULL)
+   {
+	printf("Content-type:Text\html\n\n");
+	printf("Erreur!");
+   }
 } 
 void affichage(char* ip,int x,int y,int z,int w)
 {
